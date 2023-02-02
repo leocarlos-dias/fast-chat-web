@@ -19,7 +19,7 @@ O FWB é uma forma rápida para se descontrair trocando mensagens.
 
 - A página inicial você téra que fornecer alguns dados para poder ser identificado no chat como, nome do usuário, sala a qual quer entrar e uma mensagem sobre você.
 - Na página do chat você poderá trocar mensagens à vontade com outras pessoas, além de ter o status da pessoa em tempo real você também pode conferir a bio dela pressionando o click na mensagem da mesma.
-- ATENÇÃO! Para você entrar novamente com o mesmo nome de usuário, é importante que você deslogue antes de fechar a página.
+- ATENÇÃO! Para melhorar a experiência do usuário, é recomendável deslogar o usuário clicando no botão "X" antes de fechar a sessão do navegador.
 
 ### Ferramentas e Stack a ser utilizado
 
