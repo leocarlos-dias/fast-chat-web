@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Leonardo Carlos">
+    <meta name="description" content="Fast Web Chat é uma plataforma virtual para troca de mensagens rápida!">
+    <link rel="icon" type="image/x-icon" href="../assets/sms-icon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="../dist/output.css" rel="stylesheet">
+    <script src="/socket.io/socket.io.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <script src="./index.js" defer></script>
+    <title>FWC - Chat | Message</title>
+</head>
+
+<body class=" bg-primary text-light-gray h-screen w-screen font-roboto">
+    <div class="h-full w-full max-w-5xl flex flex-col items-center justify-start mx-auto p-10">
+        <div class="h-full w-full flex flex-col items-center justify-start gap-4 rounded-2xl shadow-2xl p-6">
+            <div class="flex items-center justify-between px-2 w-full">
+                <span id="group-name" class="uppercase font-bold">grupos</span>
+                <button id="logout" class="hover:scale-110 transition-transform">
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M1.41145 0.380224C1.1267 0.0954672 0.665012 0.0954672 0.380255 0.380224C0.0954977 0.664982 0.0954977 1.12666 0.380255 1.41142L4.96882 5.99999L0.380255 10.5886C0.0954977 10.8733 0.0954977 11.335 0.380255 11.6198C0.665012 11.9045 1.1267 11.9045 1.41145 11.6198L6.00002 7.03119L10.5886 11.6198C10.8733 11.9045 11.335 11.9045 11.6198 11.6198C11.9045 11.335 11.9045 10.8733 11.6198 10.5886L7.03122 5.99999L11.6198 1.41142C11.9045 1.12666 11.9045 0.664982 11.6198 0.380224C11.335 0.0954672 10.8733 0.0954672 10.5886 0.380224L6.00002 4.96879L1.41145 0.380224Z"
+                            fill="white" />
+                    </svg>
+                </button>
+            </div>
+            <div id="messages" class="w-full flex flex-col overflow-y-scroll flex-1 gap-7 justify-start px-2">
+            </div>
+            <form class="flex items-center bg-[#282843] rounded-full w-full gap-3 p-2">
+                <input type="text" placeholder="Digite sua mensagem"
+                    class="px-3 py-2 rounded-xl text-light-gray w-full flex-1 outline-none bg-transparent" />
+                <button id="submit" type="submit" class="mr-2">
+                    <svg class="cursor-pointer" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M22.3402 10.6429L22.3327 10.6396L2.31328 2.33618C2.1449 2.26571 1.96167 2.23807 1.77999 2.25574C1.59831 2.2734 1.42384 2.33583 1.27219 2.43743C1.11197 2.54242 0.980359 2.68559 0.889207 2.85407C0.798055 3.02254 0.750218 3.21104 0.75 3.40259V8.71306C0.750089 8.97493 0.841528 9.22856 1.00856 9.43024C1.17558 9.63192 1.40774 9.76902 1.665 9.8179L12.5836 11.8368C12.6265 11.8449 12.6652 11.8678 12.6931 11.9014C12.7209 11.9351 12.7362 11.9774 12.7362 12.021C12.7362 12.0647 12.7209 12.107 12.6931 12.1406C12.6652 12.1743 12.6265 12.1971 12.5836 12.2052L1.66547 14.2242C1.40828 14.2729 1.17614 14.4098 1.00903 14.6113C0.841932 14.8128 0.750328 15.0663 0.75 15.3281V20.6395C0.749876 20.8224 0.795166 21.0025 0.881807 21.1636C0.968448 21.3246 1.09373 21.4617 1.24641 21.5624C1.43006 21.6845 1.6456 21.7497 1.86609 21.7499C2.01938 21.7498 2.1711 21.719 2.31234 21.6595L22.3313 13.4034L22.3402 13.3992C22.6096 13.2833 22.8392 13.0911 23.0006 12.8461C23.1619 12.6012 23.2479 12.3143 23.2479 12.021C23.2479 11.7277 23.1619 11.4409 23.0006 11.1959C22.8392 10.951 22.6096 10.7587 22.3402 10.6429Z"
+                            fill="#E1E1E6" />
+                    </svg>
+                </button>
+            </form>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
