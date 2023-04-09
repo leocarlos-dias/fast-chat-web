@@ -1,11 +1,14 @@
 # Fast Web Chat
 
+### sobre
+
 O FWB é uma forma rápida para se descontrair trocando mensagens.
 
 - Página Inicial: Você precisa preencher o formulário para iniciar entrar na sala.
 - Página Chat: Troque mensagens a vontade com qualquer outra pessoal.
 
 ### Tecnologias Utilizadas
+
 Abaixo estão listadas as principais tecnologias utilizadas neste projeto:
 
 - **HTML** para marcação de elementos e estruturação de páginas web.
@@ -16,6 +19,7 @@ Abaixo estão listadas as principais tecnologias utilizadas neste projeto:
 
 
 ### Instalação
+
 Para instalar as dependências necessárias, execute o seguinte comando:
 
 ```bash
@@ -25,6 +29,7 @@ yarn
 ```
 
 ### Execução
+
 Para iniciar a aplicação, execute o seguinte comando:
 ```bash
 yarn dev
