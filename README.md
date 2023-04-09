@@ -8,10 +8,12 @@ O FWB é uma forma rápida para se descontrair trocando mensagens.
 ### Tecnologias Utilizadas
 Abaixo estão listadas as principais tecnologias utilizadas neste projeto:
 
-**Node.js** com **TypeScript** e **JavaScript** como linguagens de programação e ambiente de execução;
-**Express** como framework para desenvolvimento de aplicações web em Node.js;
-**Websocket** para implementação de comunicação em tempo real entre o servidor e o cliente;
-**TailwindCSS** para estilização de componentes visuais e interface do usuário.
+- **HTML** para marcação de elementos e estruturação de páginas web.
+- **TailwindCSS** para estilização de componentes visuais e interface do usuário.
+- **Node.js** com **TypeScript** e **JavaScript** como linguagens de programação e ambiente de execução;
+- **Express** como framework para desenvolvimento de aplicações web em Node.js;
+- **Websocket** para implementação de comunicação em tempo real entre o servidor e o cliente;
+
 
 ### Instalação
 Para instalar as dependências necessárias, execute o seguinte comando:
